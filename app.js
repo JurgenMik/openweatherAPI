@@ -19,8 +19,8 @@ function cityWeather(e){
 }
 
 function drawWeather(data){
-    var celcius = Math.round(parseFloat(data.main.temp) -273.15);
-    var description = data.weather[0].description;
+    let celcius = Math.round(parseFloat(data.main.temp) -273.15);
+    let description = data.weather[0].description;
 
     document.querySelector("#description").innerHTML = description;
     document.querySelector('#temp').innerHTML = celcius + '&deg';
